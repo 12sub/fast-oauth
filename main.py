@@ -11,8 +11,8 @@ config = Config('.env')  # read config from .env file
 oauth = OAuth(config)
 oauth.register(
     name='google',
-    client_id = '770804898230-52ii9hgj9evb6h5qnp890m73nfoua6p7.apps.googleusercontent.com',
-    client_secret = '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',
+    client_id = '',
+    client_secret = '',
     server_metadata_url='https://accounts.google.com/.well-known/openid-configuration',
     client_kwargs={
         'scope': 'openid email profile'
@@ -20,8 +20,8 @@ oauth.register(
 )
 app = FastAPI()
 app.add_middleware(SessionMiddleware, secret_key="secret-string")
-github_client_id = "Ov23lioHbweyfYT6hzGp"
-github_client_secret = "8292d0763fb7aa3e79d7a2057086df96c2b93cb0"
+github_client_id = ""
+github_client_secret = ""
 
 
 
